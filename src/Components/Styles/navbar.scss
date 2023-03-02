@@ -1,0 +1,77 @@
+@import "./constant";
+@import "./variables";
+
+.app__navbar {
+    @include flexBetween;
+  height: 70px;
+  padding: 0 $md-gap;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: $trans;
+  //color: $secondary-color;
+  background-color: white;
+  z-index: 2;
+
+  &.active {
+    background: hsl(0 0% 100% / 0.8);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    color: $primary-color;
+  }
+
+ .route:hover::after{
+    content: "";
+    width: 40px;
+   height:3px;
+ margin-left: -50px;
+    background-color:rgb(80, 193, 210);
+    position: absolute
+   
+  
+    
+    
+ }
+
+
+  .navbar__logo {
+    @include logo;
+  }
+
+  .navbar__routes {
+    @include routes;
+  }
+
+  .navbar__buttons {
+    @include flexAlign;
+    gap: $lg-gap;
+
+    button {
+      @include button;
+     
+
+      &.onebtn {
+        background: transparent;
+      }
+    }
+  }
+}
+
+.nav-contact{
+  box-sizing: border-box;
+ // height: 50px;
+  //width: 80px;
+  background-color: rgb(59, 59, 89);
+  color: rgb(226, 226, 226);
+   margin: 25px;
+   padding: 22px;
+}
+
+.nav-search{
+  //margin-top: 20px;
+  //margin-left: 80px 100px;
+ // padding-left: 15rem;
+   //height: 10rem;
+    font-size: large;
+}

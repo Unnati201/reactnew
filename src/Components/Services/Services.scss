@@ -1,0 +1,117 @@
+/*.service-h2{
+    height: 100%;
+    width:100%;
+    color: black;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/*   color variables */
+$clr-primary: #d50000;
+$clr-primary-hover: #29e6a7;
+$clr-primary-dark: #039d69;
+$clr-gray100: #f9fbff;
+$clr-gray150: #f4f6fb;
+$clr-gray200: #eef1f6;
+$clr-gray300: #e1e5ee;
+$clr-gray400: #767b91;
+$clr-gray500: #4f546c;
+$clr-gray600: #2a324b;
+$clr-gray700: #161d34;
+
+/*   border radius */
+$radius: 0.2rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Oxygen, sans-serif;
+ margin: 2rem;
+}
+
+.wrapper {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
+  gap: 2rem;
+  justify-content: center;
+  height: 30rem;
+  background-color: #0f0f4c;
+}
+
+.card__btn {
+  margin: 0px;
+  padding: 0px;
+  width:100%;
+  font-size: 13px;
+}
+
+.card {
+  overflow: hidden;
+  //box-shadow: 0 2px 20px $clr-gray300;
+  border-radius: $radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+  background-color: white;
+  box-sizing: border-box;
+  width:100%;
+ // padding-left: 15px;
+  //padding-right: 2px;
+  height: 20rem;
+
+  &__image {
+    height: 10rem;
+    width: 110%;
+    object-fit: cover;
+    margin-left: -15px;
+  }
+
+  &__title {
+      padding: 1rem;
+    margin-left: 0%;
+    font-size: 18px;
+  }
+
+  &__description {
+    padding: 0 1rem;
+  }
+
+  /*&__btn {
+    padding: 0px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+  
+    //border: 2px solid $clr-primary;
+    background: white;
+    width: 100%;
+    color: black;
+   // border-radius: $radius;
+    
+    //letter-spacing: 1px;
+    //box-shadow: 10px 10px 20px rgb(2 6 32/10%);
+    transition: background 200ms ease-in, color 200ms ease-in;
+  }
+*/
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &:hover &__btn {
+    background: #0f0f4c;
+    width: 100%;
+    margin: 0px;
+    padding:0px;
+    color: white;
+    transition: background 200ms ease-in, color 200ms ease-in;
+  }
+}
