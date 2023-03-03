@@ -5,6 +5,8 @@ import { homeData } from './Home-dataslide';
 //import "./Slider.scss";
 import './Home.css';
 
+
+
 const Homeslide = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideLength = homeData.length;

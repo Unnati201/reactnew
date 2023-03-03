@@ -30,7 +30,7 @@ import "./Circle.scss"
 <img></img>
 </div>
     </div>
-
+{/*
   
   <div className='btn-data'> 
 
@@ -42,7 +42,7 @@ import "./Circle.scss"
     <button type="button">Accelerate Decisions</button><br/><br/>
 
     <button type="button">Reduced TCO <br/> Increased ROI </button>
-    </div> 
+  </div> */}
     </div>
   );
  }

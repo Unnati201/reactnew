@@ -20,6 +20,10 @@ import DataEngineer from "./Components/DataEng/DataEngineer";
 import DigitalEngineer from "./Components/DigitalEng/DigitalEngineer";
 import CloudEngineer from "./Components/CloudEng/CloudEngineer";
 import ResponsiveNavbar from "./Components/Responsive/ResponsiveNavbar";
+import SolvingChallenge from "./Components/SolvingComplexs/SolvingChallenge";
+import Rgsbox from "./Components/Rgsdata/Rgsbox";
+import SolvingData from "./Components/SolvingComplexs/Solvingdata";
+import Servicesdata from "./Components/Service/Servicesdata";
 
 
 function App() {
@@ -66,6 +70,11 @@ function App() {
   {/* <ResponsiveNavbar/> */}
    <Navbar/> 
   <Homeslide/>
+  <Rgsbox/>
+  <SolvingChallenge/>
+  <SolvingData/>
+  <Servicesdata/>
+  
 <Routes>
    <Route path='/' component={Homeslide} />
         <Route path='/industry' component={IndustryData} />
@@ -78,6 +87,7 @@ function App() {
         </Router>
     
     </div>
+
   );
 }
 
